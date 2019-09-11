@@ -290,8 +290,8 @@ public class HelloAR
                                         current_video_renderer = video_renderers.get(2);
                                     } else if (target_name.equals("openlabs") && video_renderers.get(3).texId() != 0) {
                                         video = new ARVideo();
-                                        video.openStreamingVideo("https://www.youtube.com/embed/i9bz0CZ8RTA?autoplay=1", video_renderers.get(2).texId(), scheduler);
-                                        current_video_renderer = video_renderers.get(2);
+                                        video.openVideoFile("openlabs.mp4", video_renderers.get(3).texId(), scheduler);
+                                        current_video_renderer = video_renderers.get(3);
                                     }
                                 }
                                 if (video != null) {
